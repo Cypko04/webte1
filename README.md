@@ -2,7 +2,7 @@
 
 Meno: Daniel Cyprian  
 Krúžok: Pondelok 13:00  
-Web: DOPLNIŤ ODKAZ NA ŠKOLSKÝ SERVER
+Web: https://webte1.fei.stuba.sk/~xcyprian/
 
 ## O projekte
 
