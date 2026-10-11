@@ -1,0 +1,21 @@
+HTML VALIDATION
+
+index.HTML
+Document checking completed.
+No errors or warnings to show.
+
+cv.html
+Document checking completed.
+No errors or warnings to show.
+
+workspace.html
+Document checking completed.
+No errors or warnings to show.
+
+schedule.html
+Document checking completed.
+No errors or warnings to show.
+
+map.html
+Document checking completed.
+No errors or warnings to show.

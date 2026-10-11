@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Daniel Cyprian | Pracovné prostredie</title>
+    <meta name="description" content="Moje lezenie a lezecké vybavenie." />
+
+    <meta property="og:title" content="Daniel Cyprian | Pracovné prostredie" />
+    <meta
+      property="og:description"
+      content="Moje lezenie a lezecké vybavenie."
+    />
+    <meta property="og:image" content="../img/workspace.png" />
+
+    <link rel="icon" href="../favicon.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <script src="../js/script.js" defer></script>
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-link">Preskočiť na obsah</a>
+
+    <header>
+      <div class="container">
+        <a href="../index.html" class="logo">DC</a>
+        <h2>Daniel Cyprian</h2>
+        <p>
+          Študujem aplikovanú informatiku a zaujímam sa o programovanie a šport.
+        </p>
+
+        <button
+          id="menu-button"
+          type="button"
+          aria-controls="main-navigation"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+      </div>
+    </header>
+
+    <nav id="main-navigation">
+      <ul>
+        <li><a href="../index.html">Profil</a></li>
+        <li><a href="cv.html">Životopis</a></li>
+        <li><a href="workspace.html" class="active">Pracovné prostredie</a></li>
+        <li><a href="schedule.html">Rozvrh</a></li>
+        <li><a href="map.html">Mapa</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-content" class="container">
+      <section class="workspace">
+        <h1>Pracovné prostredie – lezenie</h1>
+
+        <p>
+          Vo voľnom čase sa rád venujem lezeniu. Rozvíjam pri ňom silu,
+          vytrvalosť, sústredenie a schopnosť spolupracovať.
+        </p>
+
+        <p>
+          Na fotografii je moje lezecké vybavenie. Jednotlivé body zobrazujú
+          viac informácií.
+        </p>
+
+        <h2>Moje lezecké vybavenie</h2>
+
+        <p id="gear-help">
+          Vyberiem číslo na obrázku a zobrazia sa informácie o vybavení.
+        </p>
+
+        <input type="radio" name="gear" id="gear-1" checked />
+        <input type="radio" name="gear" id="gear-2" />
+        <input type="radio" name="gear" id="gear-3" />
+        <input type="radio" name="gear" id="gear-4" />
+        <input type="radio" name="gear" id="gear-5" />
+
+        <div class="workspace-layout">
+          <div class="workspace-image-box">
+            <img
+              src="../img/workspace.png"
+              alt="Moje lezecké vybavenie"
+              class="workspace-image"
+              loading="lazy"
+            />
+
+            <label for="gear-1" class="workspace-hotspot hotspot-1">
+              <span aria-hidden="true">1</span>
+              <span class="visually-hidden">Lezecký batoh</span>
+            </label>
+
+            <label for="gear-2" class="workspace-hotspot hotspot-2">
+              <span aria-hidden="true">2</span>
+              <span class="visually-hidden">Lezecký úväz</span>
+            </label>
+
+            <label for="gear-3" class="workspace-hotspot hotspot-3">
+              <span aria-hidden="true">3</span>
+              <span class="visually-hidden">Expresky a karabíny</span>
+            </label>
+
+            <label for="gear-4" class="workspace-hotspot hotspot-4">
+              <span aria-hidden="true">4</span>
+              <span class="visually-hidden">Lezečky</span>
+            </label>
+
+            <label for="gear-5" class="workspace-hotspot hotspot-5">
+              <span aria-hidden="true">5</span>
+              <span class="visually-hidden">Vak na kriedu</span>
+            </label>
+          </div>
+
+          <div class="workspace-panels">
+            <article class="workspace-panel panel-1">
+              <h3>1. Lezecký batoh</h3>
+              <p>
+                Batoh používam na prenášanie vybavenia pri tréningoch a výletoch
+                na skaly.
+              </p>
+            </article>
+
+            <article class="workspace-panel panel-2">
+              <h3>2. Lezecký úväz</h3>
+              <p>
+                Úväz používam pri istenom lezení. Pred lezením vždy kontrolujem
+                jeho správne nasadenie.
+              </p>
+            </article>
+
+            <article class="workspace-panel panel-3">
+              <h3>3. Expresky a karabíny</h3>
+              <p>
+                Používam ich pri istenom lezení. Pri lezení vo dvojici je
+                dôležitá tímová spolupráca, dôvera a vzájomná kontrola.
+              </p>
+            </article>
+
+            <article class="workspace-panel panel-4">
+              <h3>4. Lezečky</h3>
+              <p>
+                Lezečky mi pomáhajú pri presnom pohybe a správnej technike nôh
+                na lezeckej stene.
+              </p>
+            </article>
+
+            <article class="workspace-panel panel-5">
+              <h3>5. Vak na kriedu</h3>
+              <p>
+                Krieda pomáha udržiavať ruky suché a zlepšuje úchop na chytoch.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <address>
+          Kontakt: <a href="mailto:xxxxx@gmail.com">xxxxx@gmail.com</a>
+        </address>
+        <p>&copy; 2026 Daniel Cyprian</p>
+        <p>Zdroj: vlastná fotografia upravená s AI.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,12 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sk">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello world</title>
-</head>
-<body>
-    <h1>Hello world</h1>
-    <p>Daniel Cyprian – Webové technológie I.</p>
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Daniel Cyprian | Profil</title>
+    <meta
+      name="description"
+      content="Osobná stránka Daniela Cypriana, študenta aplikovanej informatiky na FEI STU."
+    />
+
+    <meta property="og:title" content="Daniel Cyprian | Profil" />
+    <meta
+      property="og:description"
+      content="Moje štúdium, schopnosti a záujmy."
+    />
+    <meta property="og:image" content="img/me.jpg" />
+
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-link">Preskočiť na obsah</a>
+
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">DC</a>
+        <h2>Daniel Cyprian</h2>
+        <p>
+          Študujem aplikovanú informatiku a zaujímam sa o programovanie a šport.
+        </p>
+
+        <button
+          id="menu-button"
+          type="button"
+          aria-controls="main-navigation"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+      </div>
+    </header>
+
+    <nav id="main-navigation">
+      <ul>
+        <li><a href="index.html" class="active">Profil</a></li>
+        <li><a href="pages/cv.html">Životopis</a></li>
+        <li><a href="pages/workspace.html">Pracovné prostredie</a></li>
+        <li><a href="pages/schedule.html">Rozvrh</a></li>
+        <li><a href="pages/map.html">Mapa</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-content" class="container">
+      <section class="profile">
+        <h1>Ahoj, som Daniel Cyprian</h1>
+
+        <img
+          src="img/me.jpg"
+          alt="Portrét Daniela Cypriana"
+          width="300"
+          height="400"
+          loading="lazy"
+          class="profile-image"
+        />
+
+        <p>
+          Som študent aplikovanej informatiky na FEI STU v Bratislave. Zaujímam
+          sa o programovanie a nové technológie.
+        </p>
+
+        <p>
+          Vo voľnom čase sa venujem športu a lezeniu. Rád pracujem v tíme a
+          dokážem pracovať aj pod časovým tlakom.
+        </p>
+      </section>
+
+      <section class="skills">
+        <h2>Moje kľúčové schopnosti</h2>
+        <ul>
+          <li>Tímová spolupráca</li>
+          <li>Leadership</li>
+          <li>Práca pod časovým tlakom</li>
+        </ul>
+      </section>
+
+      <aside class="motto">
+        <h2>Moje motto</h2>
+        <blockquote>Skúška je od slova skúšať.</blockquote>
+      </aside>
+    </main>
+
+    <footer>
+      <address>
+        Kontakt: <a href="mailto:xxxxx@gmail.com">xxxxx@gmail.com</a>
+      </address>
+      <p>&copy; 2026 Daniel Cyprian</p>
+      <p>Zdroj: vlastná fotografia upravená s AI.</p>
+    </footer>
+  </body>
 </html>

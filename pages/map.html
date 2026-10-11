@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Daniel Cyprian | Mapa</title>
+    <meta
+      name="description"
+      content="Interaktívna mapa mojej školy a ďalších miest."
+    />
+
+    <meta property="og:title" content="Daniel Cyprian | Mapa" />
+    <meta
+      property="og:description"
+      content="Moja škola, domov a vlastné body na mape."
+    />
+    <meta property="og:image" content="../img/me.jpg" />
+
+    <link rel="icon" href="../favicon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      defer
+    ></script>
+    <script src="../js/script.js" defer></script>
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-link">Preskočiť na obsah</a>
+
+    <header>
+      <div class="container">
+        <a href="../index.html" class="logo">DC</a>
+        <h2>Daniel Cyprian</h2>
+        <p>
+          Študujem aplikovanú informatiku a zaujímam sa o programovanie a šport.
+        </p>
+
+        <button
+          id="menu-button"
+          type="button"
+          aria-controls="main-navigation"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+      </div>
+    </header>
+
+    <nav id="main-navigation">
+      <ul>
+        <li><a href="../index.html">Profil</a></li>
+        <li><a href="cv.html">Životopis</a></li>
+        <li><a href="workspace.html">Pracovné prostredie</a></li>
+        <li><a href="schedule.html">Rozvrh</a></li>
+        <li><a href="map.html" class="active">Mapa</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-content" class="container">
+      <section class="map-section">
+        <h1>Moja poloha</h1>
+
+        <p>
+          Na mape je moja škola a približná poloha môjho bydliska. Môžem
+          pridávať aj vlastné body a vypočítať ich vzdialenosť.
+        </p>
+
+        <h2>Interaktívna mapa</h2>
+
+        <div id="map" role="region" aria-label="Interaktívna mapa"></div>
+
+        <div class="map-layout">
+          <section class="map-panel">
+            <h2>Pridať miesto</h2>
+
+            <p id="map-help">Najskôr kliknem na miesto na mape.</p>
+
+            <form id="point-form">
+              <label for="point-name">Názov miesta</label>
+
+              <input
+                type="text"
+                id="point-name"
+                placeholder="Napr. lezecká stena"
+                required
+              />
+
+              <button type="submit">Pridať bod</button>
+            </form>
+          </section>
+
+          <section class="map-panel">
+            <h2>Moje body</h2>
+
+            <p id="empty-points">Zatiaľ nemám pridané žiadne miesto.</p>
+
+            <ul id="point-list"></ul>
+          </section>
+
+          <section class="map-panel">
+            <h2>Vzdialenosť</h2>
+
+            <label for="destination">Cieľ</label>
+
+            <select id="destination">
+              <option value="school">FEI STU</option>
+              <option value="home">Domov</option>
+            </select>
+
+            <p id="distance-result">Najskôr vyberiem jeden zo svojich bodov.</p>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <address>
+          Kontakt:
+          <a href="mailto:xxxxx@gmail.com">xxxxx@gmail.com</a>
+        </address>
+
+        <p>&copy; 2026 Daniel Cyprian</p>
+
+        <p>
+          Mapové podklady:
+          <a
+            href="https://www.openstreetmap.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            OpenStreetMap
+          </a>
+          | Knižnica:
+          <a
+            href="https://leafletjs.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Leaflet
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
